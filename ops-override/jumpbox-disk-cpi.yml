@@ -1,0 +1,10 @@
+
+
+# Configure AWS sizes
+- type: replace
+  path: /resource_pools/name=vms/cloud_properties?
+  value:
+    instance_type: t2.micro
+    ephemeral_disk: {size: 50_000, type: gp2}
+    availability_zone: ((az))
+

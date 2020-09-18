@@ -1,4 +1,6 @@
-bbl up    --aws-access-key-id <IAM KEY> \
-        --aws-secret-access-key <IAM SECRET> \
-        --aws-region ap-northeast-2 \
-        --iaas aws --lb-type concourse --debug
+source set-bblenv.sh
+
+bbl up  --aws-access-key-id $BBL_AWS_ACCESS_KEY_ID \
+        --aws-secret-access-key $BBL_AWS_SECRET_ACCESS_KEY \
+        --aws-region $BBL_AWS_REGION \
+        --name $BBL_ENV_NAME --iaas $BBL_IAAS --lb-type concourse  --debug

@@ -1,0 +1,6 @@
+
+- path: /resource_pools/name=vms/stemcell?
+  type: replace
+  value:
+    sha1: 5bc63e35418982462ddab2786e4bab2d03029112
+    url: https://bosh.io/d/stemcells/bosh-vsphere-esxi-ubuntu-bionic-go_agent?v=1.54

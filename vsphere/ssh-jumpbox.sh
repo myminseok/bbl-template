@@ -1,2 +1,3 @@
 # bbl ssh --jumpbox
- ssh jumpbox@$(bbl jumpbox-address) -i ./jumpbox.key
+./fetch-jumpbox-ssh.sh
+ssh jumpbox@$(bbl jumpbox-address) -i ./jumpbox.key

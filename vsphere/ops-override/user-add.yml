@@ -1,0 +1,11 @@
+## $ apt install whoi
+## $ mkpasswd -s -m sha-512
+## Password: changeme
+
+---
+- type: replace
+  path: /instance_groups/name=jumpbox/jobs/name=user_add/properties/users/-
+  value: 
+    name: ubuntu
+    crypted_password: $6$GFsoUYxb48$1/k2bvkpoo3pEf8963nqJOWwWTbxeEPc9aqNRBmFJpzjBNwpwrXI6vcLuGcQOxgGoIonsJu84.UVor/gMiFbt/
+  

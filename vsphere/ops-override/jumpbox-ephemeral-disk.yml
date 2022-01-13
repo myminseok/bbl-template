@@ -1,0 +1,9 @@
+
+
+- type: replace
+  path: /resource_pools/name=vms/cloud_properties?
+  value:
+    instance_type: medium
+    ephemeral_disk: {size: 200_000, type: gp2}
+
+

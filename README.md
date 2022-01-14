@@ -9,6 +9,7 @@ $ brew install bbl
 and terraform cli.
 ```
 
+```
 git clone <THIS REPO>
 
 cp -r bbl-template/bbl-vsphere my-bbl-vsphere
@@ -17,7 +18,6 @@ cd  my-bbl-vsphere
 
 cp credentials.sh.example ../credentials.sh
   
-
 vi../credentials.sh
   # you donot need this for spinning up a jumpbox VM.
   export BBL_VSPHERE_VCENTER_RP=dummy_not_exist. 

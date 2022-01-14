@@ -1,4 +1,4 @@
-
+bbl will create a jumpbox, bosh vm and you may use jumpbox as you want.
 
 https://github.com/cloudfoundry/bosh-bootloader
 ```

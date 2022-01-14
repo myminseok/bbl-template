@@ -7,8 +7,6 @@ $ brew install bosh-cli
 $ brew install bbl
 
 and terraform cli.
-
-# aws
 ```
 
 git clone <THIS REPO>
@@ -45,6 +43,10 @@ vcenter_disks="bbl_disk"
 jumpbox_ip="192.168.0.6"
 director_internal_ip="192.168.0.7"
 vcenter_dc="Datacenter"%
+
+  
+# edit create-jumpbox-override.sh
+# add ops-file under ./ops-override folder if need
   
 ./bbl-up.sh
 

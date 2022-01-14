@@ -31,7 +31,7 @@ cat set-bblenv.sh
 ./bbl-plan.sh
 # now all required files will be download and generated.
 ```
-
+change vars/bbl.tfvars and change ops-file under ./ops-override folder and create-jumpbox-override.sh.
 ```
 edit vars/bbl.tfvars if need.
 
@@ -49,10 +49,6 @@ vcenter_disks="bbl_disk" <== will be create automatically on vcenter
 jumpbox_ip="192.168.0.6" <== can edit this if need
 director_internal_ip="192.168.0.7" <== can edit this if need
 vcenter_dc="Datacenter"
-
-  
-# edit create-jumpbox-override.sh
-# add ops-file under ./ops-override folder if need
 ```
 
 now let's create a jumpbox, and bosh vm(might fail), but you may use jumpbox only
@@ -67,6 +63,10 @@ cat ./ssh-jumpbox.sh
 ./bbl-print-env.sh
 
 ```                                                      
+change vm configuraton or upgrade os image? change ops-file under ./ops-override folder and create-jumpbox-override.sh. then run following command again.
+```
+./bbl-up.sh
+```
 
 ```
 ./bbl-destroy.sh

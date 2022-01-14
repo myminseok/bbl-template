@@ -31,7 +31,7 @@ cat set-bblenv.sh
 ./bbl-plan.sh
 # now all required files will be download and generated.
 ```
-change vars/bbl.tfvars and change ops-file under ./ops-override folder and create-jumpbox-override.sh.
+change vars/bbl.tfvars
 ```
 edit vars/bbl.tfvars if need.
 
@@ -50,6 +50,9 @@ jumpbox_ip="192.168.0.6" <== can edit this if need
 director_internal_ip="192.168.0.7" <== can edit this if need
 vcenter_dc="Datacenter"
 ```
+and  and change ops-file under ./ops-override folder and create-jumpbox-override.sh.
+- refer to https://bosh.io/stemcells/ for [ops-override/jumpbox-stemcell-cpi.yml](vsphere/ops-override/jumpbox-stemcell-cpi.yml)
+- refer to https://github.com/cloudfoundry/os-conf-releasefor for [ops-override/jumpbox-stemcell-cpi.yml](vsphere/ops-override/user-add.yml)
 
 now let's create a jumpbox, and bosh vm(might fail), but you may use jumpbox only
 ```
